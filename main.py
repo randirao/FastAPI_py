@@ -12,4 +12,5 @@ def read_root():
 @app.get("/map", response_class=HTMLResponse)
 def get_hospital_map():
     html_map = generate_hospital_map()
+    
     return HTMLResponse(content=html_map)
