@@ -9,6 +9,7 @@ from folium.plugins import MarkerCluster
 # .env 파일 로드
 load_dotenv()
 
+
 def get_hospitals_from_api() -> List[Dict]:
     """공공데이터 포털에서 부산 지역 병원 정보를 가져옵니다."""
     url = "http://apis.data.go.kr/B551182/hospInfoServicev2/getHospBasisList"
